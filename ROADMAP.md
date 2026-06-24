@@ -2,7 +2,7 @@
 
 A working map of where the project stands. Each stage describes **what it delivers** and **when it is considered done**. This page updates as the project progresses.
 
-**Last updated:** 2026-06-23
+**Last updated:** 2026-06-24
 
 **Legend:** ✅ done · 🟡 in progress · ⬜ planned
 
@@ -50,15 +50,15 @@ A working map of where the project stands. Each stage describes **what it delive
 
 <!--
 INTERNAL — checkpoint tag contract (not shown on the rendered page).
-A stage is marked done when its tag is pushed in the private repo:
-  1 Foundation              -> checkpoint-0-setup
-  2 One call                -> checkpoint-1-one-call
-  3 Full day of calls       -> checkpoint-2-batch-day
-  4 First dashboard         -> checkpoint-3-dashboard-v1
-  5 Best setup              -> checkpoint-4-quality-matrix
-  6 Search & pinned         -> checkpoint-5-search-pin
-  7 On-site model           -> checkpoint-6-local-model
-  8 Storage & protection    -> checkpoint-7-storage-pii
-  9 Emotion & agent-quality -> checkpoint-8-heavy-metrics
-  Phase 2 umbrella          -> checkpoint-9-phase2
+This file is auto-generated from checkpoint-* tags in the private repo.
+  stage 1: Foundation ready             -> checkpoint-0-setup
+  stage 2: One call, end to end         -> checkpoint-1-one-call
+  stage 3: A full day of calls          -> checkpoint-2-batch-day
+  stage 4: First dashboard screen       -> checkpoint-3-dashboard-v1
+  stage 5: Choosing the best setup      -> checkpoint-4-quality-matrix
+  stage 6: Search & pinned views        -> checkpoint-5-search-pin
+  stage 7: Our own on-site model        -> checkpoint-6-local-model
+  stage 8: Rich storage & data protection -> checkpoint-7-storage-pii
+  stage 9: Emotion & agent-quality insights -> checkpoint-8-heavy-metrics
+  Phase 2 umbrella             -> checkpoint-9-phase2
 -->

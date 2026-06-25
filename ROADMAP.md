@@ -2,7 +2,7 @@
 
 A working map of where the project stands. Each stage describes **what it delivers** and **when it is considered done**. This page updates as the project progresses.
 
-**Last updated:** 2026-06-24
+**Last updated:** 2026-06-25
 
 **Legend:** ✅ done · 🟡 in progress · ⬜ planned
 
@@ -12,11 +12,11 @@ A working map of where the project stands. Each stage describes **what it delive
   Servers, repository and processing environment are set up and verified.
   *Done when:* the environment is in place and validated.
 
-- [ ] **2. One call, end to end** 🟡 *in progress*
+- [x] **2. One call, end to end** ✅
   A single real call goes the whole way: recording → text → key fields (amount owed, promise to pay, outcome) → stored with supporting quotes.
   *Done when:* one call produces meaningful fields with evidence quotes.
 
-- [ ] **3. A full day of calls** ⬜
+- [ ] **3. A full day of calls** 🟡 *in progress*
   A day's worth of calls processed in batches; long calls split by speaker (agent / debtor); very short calls filtered out cheaply; field accuracy cross-checked.
   *Done when:* a full day is processed and the cost picture is confirmed on real numbers.
 

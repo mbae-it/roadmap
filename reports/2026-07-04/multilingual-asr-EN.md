@@ -3,6 +3,14 @@
 **Date:** 2026-07-04 · **Sample:** 100 real calls · Aggregated report, no personal data and
 no debtor numbers.
 
+## Project stage
+
+- **Phase 1 (pilot): validating the pipeline on real calls — in progress.**
+- **Done:** end-to-end pipeline (call → ASR → PII masking → field extraction → database),
+  tested on 100 calls; ASR choice (local vs cloud); multilingual ASR evaluated.
+- **Next:** number-parsing fixes, a full day (37k calls), web dashboard, local extraction
+  (full Config A).
+
 ## What we tested
 
 We ran 100 real calls through three speech-recognition (ASR) configurations to answer one

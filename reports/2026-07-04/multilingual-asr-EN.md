@@ -18,6 +18,11 @@ question: can the **local** model (data never leaves India — residency) handle
 languages that appear in calls, not just Hindi? The key metric is how accurately the system
 extracts the **debt amount**.
 
+Accuracy was not judged by eye but **verified against real data from the collections system**
+(DebThor, an export from the IT team): actual debt amounts, promises, and real payments. That
+is why the tables carry a "reference" baseline — what was extracted from the call was compared
+against the fact in the banking system. The data is anonymized, and PII never leaves India.
+
 ## Configurations (what was compared)
 
 | Configuration | ASR | Extraction | Where data is processed |

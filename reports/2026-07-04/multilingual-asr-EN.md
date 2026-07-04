@@ -82,12 +82,13 @@ but the gap is explainable and mostly unrelated to defects in our code (see belo
 | Hindi | 41 | ✅ yes | Primary language, works reliably |
 | Tamil | 4 | ✅ now yes | Previously lost entirely; multilingual recovers part |
 | English | 1 | ❌ no | The local model has no English, falls back to Hindi |
-| Bengali | 2* | — not applicable | The amount is **not spoken aloud** in these calls — nothing to capture |
+| Bengali | 2* | — no conclusion | Only 2 calls; in these two the debt-system amount is not stated |
 
-\* The Bengali calls are **not** part of the 46: there is no spoken amount that matches the debt
-system. This was confirmed on the Sarvam cloud too — it also "fails" to capture these amounts,
-because they are simply never said. So this is **not a recognition defect** but a property of
-the calls themselves.
+\* There are only **2** Bengali calls in the sample — too few to draw any conclusion about the
+language. In these two specific calls there is no spoken amount that matches the debt system —
+and the same holds on the Sarvam cloud: it also "fails" to capture them, because the amount is
+not stated in these calls. This is about **these specific calls, not the Bengali language in
+general** — Bengali calls do state amounts, just not these two.
 
 ## Limitations
 

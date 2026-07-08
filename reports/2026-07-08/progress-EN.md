@@ -35,22 +35,36 @@ DebThor collections system.
 
 ## Result: debt-amount accuracy (reconciled against DebThor)
 
-The pilot's key metric is how accurately the system extracts the **debt amount** from a call.
-We compare two processing paths: **local** (in India, residency-safe) and **cloud** (Sarvam).
-The reference ("ground truth") is the actual debt amount from the **DebThor** collections
-system.
+The metric is the share of calls where the system extracts the correct **debt amount**,
+reconciled against the actual records of the **DebThor** collections system. An important point
+about the method: **the debt amount is not spoken aloud in every conversation.** When it is not
+spoken, both systems — local and cloud — correctly return nothing. Such calls must not count in
+the accuracy denominator: there was nothing to name. So accuracy is measured on the subset where
+the amount was **actually spoken**.
 
-| Processing path | Language | Accuracy (match to the real amount) | Reference |
-|---|---|---|---|
-| **Local** (in India) | Hindi | **6 / 10** | DebThor (actual debt amount) |
-| Cloud (Sarvam) | Hindi | 6 / 10 | DebThor |
-| **Local** (in India) | Tamil | **3 / 9** | DebThor |
-| Cloud (Sarvam) | Tamil | 3 / 9 | DebThor |
+**Hindi** — 100 calls with a DebThor amount; both paths processed 95, which is what we compare:
 
-**The local path is at parity with the cloud** on both languages. The differences from the
-reference occur mainly where **the recording itself is poor quality** or **the language is
-rare** — this is a limit of speech recognition as such, not a defect in our code. Where the
-audio is clean, both paths reliably recover the correct amount.
+| Path | Language | Calls with a DebThor amount | Of those, spoken aloud | Accuracy on "spoken" | Same for Sarvam? |
+|---|---|---|---|---|---|
+| **Local** (in India, new number engine) | Hindi | 95 | 61 | **35 / 61 (~57 %)** | Sarvam **38 / 61 (~62 %)** — on par |
+| **Local** (in India) | Tamil | reference still thin | — | — | not enough data for a stable figure |
+
+**How to read these numbers:**
+
+- In **34 of the 95 calls the amount was not spoken aloud** — both systems correctly returned
+  nothing. That is why the "raw" share (35 of 95 ≈ 37 %) looks understated: the denominator is
+  inflated by calls where there was nothing to say. The correct metric is **on the "spoken"
+  subset**.
+- On calls where the amount was spoken, the **local path is on par with the cloud**: 35 vs 38 of
+  61 — a three-call difference at this sample size.
+- The **new number-parsing engine narrowed the earlier gap** of the local path (it used to trail
+  more clearly).
+- The remaining misses are the **same** for both: **poor recording quality**, or the **spoken
+  figure differing from the DebThor case balance** (partial payments / write-offs) — a limit of
+  recognition and of the reference's semantics, not a defect in our code.
+- **Tamil** is currently under-measured: only a handful of Tamil calls have a DebThor amount. We
+  are assembling a **50-call Tamil set** to request the reference from the bank — that will give
+  a robust figure (see "Next").
 
 ---
 

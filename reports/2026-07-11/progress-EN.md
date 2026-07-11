@@ -11,10 +11,10 @@ discount, penalty). Below are the results, plus one finding with direct business
 
 | Topic | Result |
 |---|---|
-| Tamil language | Closed on the full sample (50 calls from the customer team). Local path = cloud |
+| Tamil language | Closed on the full sample (50 calls from your team). Local path = cloud |
 | Hindi + Tamil | Parity "local vs cloud" on both languages — the residency path is competitive |
 | Source of truth | Confirmed: truth lives in the call, not in the debtor database |
-| Discounts | Found 12 calls with a concrete discount offer that is **not** in the customer's systems |
+| Discounts | Found 12 calls with a concrete discount offer that is **not** in your systems |
 | Amount standard | Draft of 5 markers — covers 92% of amounts; under review |
 | Infrastructure | Server-overload protection moved to the OS level — no more overloads |
 
@@ -33,7 +33,7 @@ and that our ground truth can be trusted, and only then do we move to scale and 
 ## 2. Tamil language — closed on the full sample
 
 Tamil was previously an open risk: the ground truth was thin (few calls with an amount). The
-customer team provided labeled data for **50 Tamil calls** — enough for a full check.
+your team provided labeled data for **50 Tamil calls** — enough for a full check.
 
 On calls **where the amount is spoken aloud** (the subset on which amount-extraction accuracy
 can be measured at all):
@@ -63,8 +63,8 @@ collections database (DebThor) does it match?** We checked this on **75 calls**.
 most cases they name the debt principal, exactly as recorded in our ground truth.
 
 **Conclusion 2 — and it matters more:** the debtor database is **unreliable as a single source
-of truth**. The data passes through many hands and gets distorted along the way — the customer
-team confirmed this too. Therefore **the primary source of truth is the call itself**, not the
+of truth**. The data passes through many hands and gets distorted along the way — your
+team notes this too. Therefore **the primary source of truth is the call itself**, not the
 record in the system. The product is built on this principle.
 
 ---
@@ -73,7 +73,7 @@ record in the system. The product is built on this principle.
 
 The most significant finding of the week. The system detected calls where the operator
 **offers the debtor a concrete discount or settlement** — and **none** of these amounts are
-recorded in the customer's systems. The agreement exists **only in the audio**.
+recorded in your systems. The agreement exists **only in the audio**.
 
 | Type | Number of calls | What happens |
 |---|---|---|
@@ -92,7 +92,7 @@ Examples of offered terms (with no link to the debtor's identity):
 
 These 12 offers are confirmed by **two independent reviews and by listening to the audio**.
 
-**Business takeaway:** the system gives the customer **visibility into real agreements that are
+**Business takeaway:** the system gives you **visibility into real agreements that are
 currently in none of its systems**. This is direct control: which discounts are being handed
 out on the line, for what amounts, and whether they match policy.
 
@@ -122,14 +122,14 @@ These 5 markers cover **92%** of all amounts spoken in calls.
 **Goal:** the call turns from "a recording of a conversation" into **a source of structured
 data** — the amount arrives already tagged with a clear type, no guessing.
 
-**Status:** draft under review with the customer team and the call center.
+**Status:** draft under review with your team and the call center.
 
 ---
 
 ## 6. Infrastructure
 
 Server-overload protection has been moved to the **operating-system level**: a load ceiling of
-**90%** is enforced, so the customer's IT team **always keeps a reserve** of capacity. This is
+**90%** is enforced, so your IT team **always keeps a reserve** of capacity. This is
 a system-level limit that cannot be bypassed from within tasks. **There will be no more
 overload incidents.**
 

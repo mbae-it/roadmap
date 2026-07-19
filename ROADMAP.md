@@ -2,7 +2,7 @@
 
 A working map of where the project stands. Each stage describes **what it delivers** and **when it is considered done**. This page updates as the project progresses.
 
-**Last updated:** 2026-06-25
+**Last updated:** 2026-07-19
 
 **Legend:** ✅ done · 🟡 in progress · ⬜ planned
 

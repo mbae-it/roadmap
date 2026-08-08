@@ -2,7 +2,7 @@
 
 A working map of where the project stands. Each stage describes **what it delivers** and **when it is considered done**. This page updates as the project progresses.
 
-**Last updated:** 2026-07-19
+**Last updated:** 2026-08-08
 
 **Legend:** ✅ done · 🟡 in progress · ⬜ planned
 
@@ -16,15 +16,15 @@ A working map of where the project stands. Each stage describes **what it delive
   A single real call goes the whole way: recording → text → key fields (amount owed, promise to pay, outcome) → stored with supporting quotes.
   *Done when:* one call produces meaningful fields with evidence quotes.
 
-- [ ] **3. A full day of calls** 🟡 *in progress*
+- [x] **3. A full day of calls** ✅
   A day's worth of calls processed in batches; long calls split by speaker (agent / debtor); very short calls filtered out cheaply; field accuracy cross-checked.
   *Done when:* a full day is processed and the cost picture is confirmed on real numbers.
 
-- [ ] **4. First dashboard screen** ⬜
+- [x] **4. First dashboard screen** ✅
   A simple web page showing the key numbers: conversion / promises to pay, agents, objections, compliance.
   *Done when:* the page shows real metrics from processed calls.
 
-- [ ] **5. Choosing the best setup** ⬜
+- [x] **5. Choosing the best setup** ✅
   Compare processing setups on a sample and pick the working combination for quality and cost.
   *Done when:* a justified working setup is chosen, with quality differences shown on numbers.
 
@@ -32,17 +32,29 @@ A working map of where the project stands. Each stage describes **what it delive
   Search across calls (filters + text + meaning) with drill-down to the exact quote, timestamp and audio; frequent searches pinned as permanent widgets.
   *Done when:* calls can be found by query and a query pinned as a widget.
 
-- [ ] **7. Our own on-site model** ⬜
-  Try a fully on-premise setup and measure whether it matches cloud quality.
-  *Done when:* a clear "matches / doesn't match" verdict on numbers.
+- [ ] **7. Our own on-site model** 🟡 *in progress*
+  On-site engine v1 assembled and examined against the cloud reference on a held-out set — quality verdict positive on the key business metric; now improving toward full reference quality on-premise, with measurable quality gates.
+  *Done when:* the on-site engine reaches reference quality on the agreed gates, measured on calls it has never seen.
 
-- [ ] **8. Rich storage & data protection** ⬜
+- [x] **8. Rich storage & data protection** ✅
   Store everything needed with headroom; for cloud processing, personal data is anonymized before it leaves.
   *Done when:* the storage model is locked in and anonymization works.
 
 - [ ] **9. Emotion & agent-quality insights** ⬜
   Prototype emotion and agent-performance scoring on a sample; measure reliability.
   *Done when:* reliability is measured and product-readiness is clear.
+
+- [x] **10. Objection & conversation analytics** ✅
+  Recurring objections and the conversation patterns around them, drawn from the processed calls and written up as a working playbook for your team.
+  *Done when:* a playbook derived from analyzed calls is delivered.
+
+- [x] **11. Cross-check with client systems** ✅
+  An automated bridge that reconciles what the calls contain against what your own systems record, so the two can be compared without manual work.
+  *Done when:* the reconciliation runs automatically and its output is reviewable.
+
+- [ ] **12. Audit & alerting layer** ⬜
+  Ongoing checks over processed calls, with alerts raised when something needs a person to look at it.
+  *Done when:* checks run on a schedule and alerts reach the right people.
 
 ---
 
@@ -51,14 +63,18 @@ A working map of where the project stands. Each stage describes **what it delive
 <!--
 INTERNAL — checkpoint tag contract (not shown on the rendered page).
 This file is auto-generated from checkpoint-* tags in the private repo.
-  stage 1: Foundation ready             -> checkpoint-0-setup
-  stage 2: One call, end to end         -> checkpoint-1-one-call
-  stage 3: A full day of calls          -> checkpoint-2-batch-day
-  stage 4: First dashboard screen       -> checkpoint-3-dashboard-v1
-  stage 5: Choosing the best setup      -> checkpoint-4-quality-matrix
-  stage 6: Search & pinned views        -> checkpoint-5-search-pin
-  stage 7: Our own on-site model        -> checkpoint-6-local-model
-  stage 8: Rich storage & data protection -> checkpoint-7-storage-pii
-  stage 9: Emotion & agent-quality insights -> checkpoint-8-heavy-metrics
-  Phase 2 umbrella             -> checkpoint-9-phase2
+  stage  1: Foundation ready                   -> checkpoint-0-setup
+  stage  2: One call, end to end               -> checkpoint-1-one-call
+  stage  3: A full day of calls                -> checkpoint-2-batch-day
+  stage  4: First dashboard screen             -> checkpoint-3-dashboard-v1
+  stage  5: Choosing the best setup            -> checkpoint-4-quality-matrix
+  stage  6: Search & pinned views              -> checkpoint-5-search-pin
+  stage  7: Our own on-site model              -> checkpoint-6-local-model
+  stage  8: Rich storage & data protection     -> checkpoint-7-storage-pii
+  stage  9: Emotion & agent-quality insights   -> checkpoint-8-heavy-metrics
+  stage 10: Objection & conversation analytics -> checkpoint-objection-analytics
+  stage 11: Cross-check with client systems    -> checkpoint-crm-crosscheck
+  stage 12: Audit & alerting layer             -> checkpoint-audit-alerting
+  Phase 2 umbrella                            -> checkpoint-9-phase2
+  a stage is IN PROGRESS when <its tag>-inprogress also exists.
 -->

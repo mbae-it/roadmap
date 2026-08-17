@@ -2,7 +2,7 @@
 
 A working map of where the project stands. Each stage describes **what it delivers** and **when it is considered done**. This page updates as the project progresses.
 
-**Last updated:** 2026-08-08
+**Last updated:** 2026-08-17
 
 **Legend:** ✅ done · 🟡 in progress · ⬜ planned
 
@@ -33,7 +33,7 @@ A working map of where the project stands. Each stage describes **what it delive
   *Done when:* calls can be found by query and a query pinned as a widget.
 
 - [ ] **7. Our own on-site model** 🟡 *in progress*
-  On-site engine v1 assembled and examined against the cloud reference on a held-out set — quality verdict positive on the key business metric; now improving toward full reference quality on-premise, with measurable quality gates.
+  On-site engine v1 assembled and examined against the cloud reference on calls it has never seen — quality verdict positive on the key business metric. Four held-out sets of calls are frozen before use; the certification suite fixes its quality gates in advance of each experiment; the first exam of the complete toolkit is under way; and audio verdicts from your QA team feed the reference set.
   *Done when:* the on-site engine reaches reference quality on the agreed gates, measured on calls it has never seen.
 
 - [x] **8. Rich storage & data protection** ✅
@@ -45,16 +45,20 @@ A working map of where the project stands. Each stage describes **what it delive
   *Done when:* reliability is measured and product-readiness is clear.
 
 - [x] **10. Objection & conversation analytics** ✅
-  Recurring objections and the conversation patterns around them, drawn from the processed calls and written up as a working playbook for your team.
+  Recurring objections and the conversation patterns around them, drawn from the processed calls and written up as a working playbook for your team. Also from this layer: spoken promise dates turned into calendar dates, and an operator view — who is flagged most often, and how closely the agreed script is followed.
   *Done when:* a playbook derived from analyzed calls is delivered.
 
 - [x] **11. Cross-check with client systems** ✅
   An automated bridge that reconciles what the calls contain against what your own systems record, so the two can be compared without manual work.
   *Done when:* the reconciliation runs automatically and its output is reviewable.
 
-- [ ] **12. Audit & alerting layer** ⬜
-  Ongoing checks over processed calls, with alerts raised when something needs a person to look at it.
-  *Done when:* checks run on a schedule and alerts reach the right people.
+- [ ] **12. Manager cabinet & alerting** ⬜
+  A manager's workspace over the processed calls — saved views, drill-down to the exact quote — together with ongoing checks that raise an alert when something needs a person to look at it.
+  *Done when:* the workspace is in your hands, checks run on a schedule and alerts reach the right people.
+
+- [ ] **13. Live processing (GPU)** ⬜
+  Calls processed as they come in, on hardware sized for it, so results are available without waiting for a batch to be run. The hardware decision is open and is yours.
+  *Done when:* calls are processed live at working volume on the agreed hardware.
 
 ---
 
@@ -74,7 +78,8 @@ This file is auto-generated from checkpoint-* tags in the private repo.
   stage  9: Emotion & agent-quality insights   -> checkpoint-8-heavy-metrics
   stage 10: Objection & conversation analytics -> checkpoint-objection-analytics
   stage 11: Cross-check with client systems    -> checkpoint-crm-crosscheck
-  stage 12: Audit & alerting layer             -> checkpoint-audit-alerting
+  stage 12: Manager cabinet & alerting         -> checkpoint-audit-alerting
+  stage 13: Live processing (GPU)              -> checkpoint-live-gpu
   Phase 2 umbrella                            -> checkpoint-9-phase2
   a stage is IN PROGRESS when <its tag>-inprogress also exists.
 -->

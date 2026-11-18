@@ -52,7 +52,7 @@ gives **parity "local vs cloud" on both languages**. Practical takeaway: the pat
 ## 3. Key finding: truth lives in the call, not in the database
 
 We asked a simple question: when an operator says an amount aloud, **which field of the
-collections database (DebThor) does it match?** We checked this on **75 calls**.
+collections database (the client's system) does it match?** We checked this on **75 calls**.
 
 | What we checked | Result |
 |---|---|

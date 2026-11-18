@@ -12,7 +12,7 @@ numbers. All data is processed inside India (residency).
 We are confirming on live calls that the whole chain works as intended: call → speech
 recognition → PII masking → field extraction (debt amount, promise-to-pay, etc.) → database.
 Accuracy is measured not by eye but by reconciliation against the actual records in the
-DebThor collections system.
+client's collections system.
 
 ---
 
@@ -33,18 +33,18 @@ DebThor collections system.
 
 ---
 
-## Result: debt-amount accuracy (reconciled against DebThor)
+## Result: debt-amount accuracy (reconciled against the client's system)
 
 The metric is the share of calls where the system extracts the correct **debt amount**,
-reconciled against the actual records of the **DebThor** collections system. An important point
+reconciled against the actual records of the client's collections system. An important point
 about the method: **the debt amount is not spoken aloud in every conversation.** When it is not
 spoken, both systems — local and cloud — correctly return nothing. Such calls must not count in
 the accuracy denominator: there was nothing to name. So accuracy is measured on the subset where
 the amount was **actually spoken**.
 
-**Hindi** — 100 calls with a DebThor amount; both paths processed 95, which is what we compare:
+**Hindi** — 100 calls with an amount in the client's system; both paths processed 95, which is what we compare:
 
-| Path | Language | Calls with a DebThor amount | Of those, spoken aloud | Accuracy on "spoken" | Same for Sarvam? |
+| Path | Language | Calls with an amount in the client's system | Of those, spoken aloud | Accuracy on "spoken" | Same for Sarvam? |
 |---|---|---|---|---|---|
 | **Local** (in India, new number engine) | Hindi | 95 | 61 | **35 / 61 (~57 %)** | Sarvam **38 / 61 (~62 %)** — on par |
 | **Local** (in India) | Tamil | reference still thin | — | — | not enough data for a stable figure |
@@ -60,9 +60,9 @@ the amount was **actually spoken**.
 - The **new number-parsing engine narrowed the earlier gap** of the local path (it used to trail
   more clearly).
 - The remaining misses are the **same** for both: **poor recording quality**, or the **spoken
-  figure differing from the DebThor case balance** (partial payments / write-offs) — a limit of
+  figure differing from the case balance in the client's system** (partial payments / write-offs) — a limit of
   recognition and of the reference's semantics, not a defect in our code.
-- **Tamil** is currently under-measured: only a handful of Tamil calls have a DebThor amount. We
+- **Tamil** is currently under-measured: only a handful of Tamil calls have an amount in the client's system. We
   are assembling a **50-call Tamil set** to request the reference from the bank — that will give
   a robust figure (see "Next").
 

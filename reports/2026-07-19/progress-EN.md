@@ -77,7 +77,7 @@ details, no addresses, no account numbers**. Standard secret-scanners did not ca
 detect passwords and API keys, not phone numbers.
 
 **Why it is limited.** The numbers were phone numbers alone. Linking a number back to a specific
-debtor or case requires the CDR and DebThor records — and **those were never on GitHub**. The
+debtor or case requires the CDR and the client's system records — and **those were never on GitHub**. The
 repository is private (org members only). So the practical exposure is: a list of numbers,
 without the context that would make them actionable.
 
